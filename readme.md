@@ -1,4 +1,6 @@
-# GO LIVE HERE - https://prankush-office.netlify.app/
+# GO LIVE HERE - https://prankush-office.netlify.app/ 
+# (Give some time to load)
+
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
