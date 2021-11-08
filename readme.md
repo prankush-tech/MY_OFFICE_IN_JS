@@ -14,3 +14,5 @@ npm run dev
 # Build for production in the dist/ directory
 npm run build
 ```
+
+<a href align="center"><img src="https://user-images.githubusercontent.com/76916192/140793817-065771f4-5fcf-4301-bc82-489d46d77797.gif" alt="HTML tutorial"  ></a>
