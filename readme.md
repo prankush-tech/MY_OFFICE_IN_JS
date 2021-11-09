@@ -18,5 +18,5 @@ npm run dev
 npm run build
 ```
 <div align="center" >
-<a href ><img src="https://user-images.githubusercontent.com/76916192/140793817-065771f4-5fcf-4301-bc82-489d46d77797.gif" alt="HTML tutorial"   ></a></div>
+<a href ><img src="https://user-images.githubusercontent.com/76916192/140793817-065771f4-5fcf-4301-bc82-489d46d77797.gif" alt="SAMPLE GIFs"   ></a></div>
 
