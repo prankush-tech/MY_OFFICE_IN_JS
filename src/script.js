@@ -10,7 +10,7 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
  */
 // Debug
 const gui = new dat.GUI({
-    width: 400
+    width: 200
 })
 
 
@@ -19,7 +19,7 @@ const canvas = document.querySelector('canvas.webgl')
 
 // Scene
 const scene = new THREE.Scene()
-
+scene.background = new THREE.Color("rgb(5, 0, 23)");
 /**
  * Loaders
  */
@@ -59,6 +59,7 @@ gltfLoader.load(
             child.material= bakedMaterial
             
         })
+        gltf.scene.position.y-=1;
         scene.add(gltf.scene)
        
     }
@@ -105,7 +106,7 @@ plane.geometry.setAttribute(
 
 // const ambientlight= new THREE.AmbientLight(0xffffff,0.7)
 // scene.add(ambientlight)
-const ambientLight = new THREE.AmbientLight('#b9d5ff', 0.7)
+const ambientLight = new THREE.AmbientLight('#b9d5ff', 0.4)
 gui.add(ambientLight, 'intensity').min(0.3).max(0.8).step(0.001)
 scene.add(ambientLight)
 
@@ -123,7 +124,7 @@ pointlight2.position.z=-5
 plane.scale.x=5
 plane.scale.y=2.8
 
-plane.position.y=4.46;
+plane.position.y=3.46;
 plane.position.z=1.12;
 plane.position.x=-4.55;
 plane.rotation.y=(Math.PI)/2;
@@ -182,8 +183,6 @@ scene.add(camera)
 
 
 
-
-
 // Controls
 const controls = new OrbitControls(camera, canvas)
 controls.enableDamping = true
@@ -194,12 +193,14 @@ controls.maxPolarAngle = (Math.PI)/2;
 controls.minAzimuthAngle = 0 // radians
 controls.maxAzimuthAngle = (Math.PI)/2; // radians
 
+
 /**
  * Renderer
  */
 const renderer = new THREE.WebGLRenderer({
     canvas: canvas,
-    antialias: true
+    antialias: true,
+    alpha : true
 })
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
