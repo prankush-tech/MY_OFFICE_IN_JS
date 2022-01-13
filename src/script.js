@@ -69,14 +69,7 @@ gltfLoader.load(
 const texturecolorloader = new THREE.TextureLoader();
 
 const doorcolortexture = texturecolorloader.load('/textures/door/color.jpg')
-const doorslphatexture = texturecolorloader.load('/textures/door/alpha.jpg')
-const doorambientOcclusiontexture = texturecolorloader.load('/textures/door/ambientOcclusion.jpg')
-const doorheighttexture = texturecolorloader.load('/textures/door/height.jpg')
-const doormetalnesstexture = texturecolorloader.load('/textures/door/metalness.jpg')
-const doornormaltexture = texturecolorloader.load('/textures/door/normal.jpg')
-const doorroughnesstexture = texturecolorloader.load('/textures/door/roughness.jpg')
-const matcaptexture = texturecolorloader.load('/textures/matcaps/8.png')
-const gradienttexture = texturecolorloader.load('/textures/gradients/3.jpg')
+
 
 
 const material = new THREE.MeshStandardMaterial()
